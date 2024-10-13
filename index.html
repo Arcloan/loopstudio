@@ -12,6 +12,7 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="main.js"></script>
 
     <title>Frontend Mentor | Loopstudios landing page</title>
   </head>
@@ -19,8 +20,36 @@
     <header class="c-header">
       <img src="images/logo.svg" alt="" class="c-header__logo" />
       <img src="images/icon-hamburger.svg" alt="" class="c-header__menu" />
+      <nav class="c-header__nav">
+        <ul class="c-header__list-links">
+          <li class="c-header__link">
+            <a href="#">About</a>
+          </li>
+          <li class="c-header__link">
+            <a href="#">Careers</a>
+          </li>
+          <li class="c-header__link">
+            <a href="#">Events</a>
+          </li>
+          <li class="c-header__link">
+            <a href="#">Products</a>
+          </li>
+          <li class="c-header__link">
+            <a href="#">Support</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
+      <div class="c-menu js-hidden">
+        <ul class="c-menu__list">
+          <li class="c-menu__list-item">ABOUT</li>
+          <li class="c-menu__list-item">CAREERS</li>
+          <li class="c-menu__list-item">EVENTS</li>
+          <li class="c-menu__list-item">PRODUCTS</li>
+          <li class="c-menu__list-item">SUPPORT</li>
+        </ul>
+      </div>
       <div class="c-hero">
         <h2 class="c-hero__description">IMMERSIVE EXPERIENCES THAT DELIVER</h2>
       </div>
@@ -28,7 +57,7 @@
         <picture>
           <source
             srcset="images/desktop/image-interactive.jpg"
-            media="(min-width : 45em)"
+            media="(min-width : 1080px)"
           />
           <img
             src="images/mobile/image-interactive.jpg"
@@ -105,23 +134,34 @@
         ><a href="#" class="c-footer__link">Support</a>
       </div>
       <div class="c-footer__social-container">
-        <img
-          src="images/icon-facebook.svg"
-          alt=""
-          class="c-footer__social-icon"
-        /><img
-          src="images/icon-twitter.svg"
-          alt=""
-          class="c-footer__social-icon"
-        /><img
-          src="images/icon-pinterest.svg"
-          alt=""
-          class="c-footer__social-icon"
-        /><img
-          src="images/icon-instagram.svg"
-          alt=""
-          class="c-footer__social-icon"
-        />
+        <div class="c-footer__social-img">
+          <img
+            src="images/icon-facebook.svg"
+            alt=""
+            class="c-footer__social-icon"
+          />
+        </div>
+        <div class="c-footer__social-img">
+          <img
+            src="images/icon-twitter.svg"
+            alt=""
+            class="c-footer__social-icon"
+          />
+        </div>
+        <div class="c-footer__social-img">
+          <img
+            src="images/icon-pinterest.svg"
+            alt=""
+            class="c-footer__social-icon"
+          />
+        </div>
+        <div class="c-footer__social-img">
+          <img
+            src="images/icon-instagram.svg"
+            alt=""
+            class="c-footer__social-icon"
+          />
+        </div>
       </div>
       <p class="c-footer__copyright">
         © 2021 Loopstudios. All rights reserved.
