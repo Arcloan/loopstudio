@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | Loopstudios landing page</title>
+  </head>
+  <body>
+    <header class="c-header">
+      <img src="images/logo.svg" alt="" class="c-header__logo" />
+      <img src="images/icon-hamburger.svg" alt="" class="c-header__menu" />
+    </header>
+    <main>
+      <div class="c-hero">
+        <h2 class="c-hero__description">IMMERSIVE EXPERIENCES THAT DELIVER</h2>
+      </div>
+      <section class="c-company" aria-describedby="company_description">
+        <picture>
+          <source
+            srcset="images/desktop/image-interactive.jpg"
+            media="(min-width : 45em)"
+          />
+          <img
+            src="images/mobile/image-interactive.jpg"
+            alt=""
+            class="c-company__img"
+          />
+        </picture>
+        <div class="c-company__title-container">
+          <h2 class="c-company__title" id="company_description">
+            THE LEADER IN INTERACTIVE VR
+          </h2>
+          <p class="c-company__description">
+            Foundend in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies arund the globe. Our
+            award-winning creations have transformed businesses through digital
+            experiences that bind to their brand.
+          </p>
+        </div>
+      </section>
+      <section class="c-creations" aria-describedby="grid_title">
+        <h2 class="c-creations__title" id="grid_title">OUR CREATIONS</h2>
+        <div class="l-grid-images">
+          <div class="l-grid-images__item">
+            <div class="c-card c-card--earth">
+              <h3 class="c-card__title">DEEP EARTH</h3>
+            </div>
+          </div>
+          <div class="l-grid-images__item">
+            <div class="c-card c-card--night-arcade">
+              <h3 class="c-card__title">NIGHT ARCADE</h3>
+            </div>
+          </div>
+          <div class="l-grid-images__item">
+            <div class="c-card">
+              <h3 class="c-card__title">SOCCER TEAM VR</h3>
+            </div>
+          </div>
+          <div class="l-grid-images__item">
+            <div class="c-card">
+              <h3 class="c-card__title">THE GRID</h3>
+            </div>
+          </div>
+          <div class="l-grid-images__item">
+            <div class="c-card">
+              <h3 class="c-card__title">FROM UP ABOVE VR</h3>
+            </div>
+          </div>
+          <div class="l-grid-images__item">
+            <div class="c-card">
+              <h3 class="c-card__title">POCKET BOREALIS</h3>
+            </div>
+          </div>
+          <div class="l-grid-images__item">
+            <div class="c-card">
+              <h3 class="c-card__title">THE CURIOSITY</h3>
+            </div>
+          </div>
+          <div class="l-grid-images__item">
+            <div class="c-card">
+              <h3 class="c-card__title">MAKE IT FISHEYE</h3>
+            </div>
+          </div>
+        </div>
+        <button class="c-creations__button">SEE ALL</button>
+      </section>
+    </main>
+    <footer class="c-footer">
+      <img src="images/logo.svg" alt="" class="c-footer__logo" />
+      <div class="c-footer__link-container">
+        <a href="#" class="c-footer__link">About</a>
+        <a href="#" class="c-footer__link">Careers</a
+        ><a href="#" class="c-footer__link">Events</a
+        ><a href="#" class="c-footer__link">Products</a
+        ><a href="#" class="c-footer__link">Support</a>
+      </div>
+      <div class="c-footer__social-container">
+        <img
+          src="images/icon-facebook.svg"
+          alt=""
+          class="c-footer__social-icon"
+        /><img
+          src="images/icon-twitter.svg"
+          alt=""
+          class="c-footer__social-icon"
+        /><img
+          src="images/icon-pinterest.svg"
+          alt=""
+          class="c-footer__social-icon"
+        /><img
+          src="images/icon-instagram.svg"
+          alt=""
+          class="c-footer__social-icon"
+        />
+      </div>
+      <p class="c-footer__copyright">© 2021 Loopstudios. All rights reserved</p>
+    </footer>
+  </body>
+</html>
